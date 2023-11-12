@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-
+import "@lrnwebcomponents/video-player/video-player.js";
 export class LectureScreen extends LitElement {
   static get properties() {
     return {
@@ -33,13 +33,14 @@ export class LectureScreen extends LitElement {
       });
   }
 
+ 
   render() {
     return html`
-      <video controls>
-        <source src="${this.videoUrl}" type="video/mp4">
-      </video>
-    `;
-  }
+   <video-player source=${this.videoUrl} accent-color="orange" dark track="https://haxtheweb.org/files/HAXshort.vtt">
+   </video-player>
+   `;
+    }
+   
 }
 
 customElements.define('lecture-screen', LectureScreen);
