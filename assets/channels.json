@@ -6,79 +6,53 @@
       {
         "title": "Introduction",
         "description": "The future we need, not the future we have.",
-        "startTime": 0 
+        "startTime": 0 ,
+        "thumbnailUrl": "URL_TO_THUMBNAIL_IMAGE_INTRODUCTION",
+        "videoUrl": "https://www.youtube.com/watch?v=CziSKoOTgy4&t=2s"
       },
       {
         "title": "Part 1: Topic 1",
         "description": "Description for part 1, topic 1.",
-        "startTime": 60
+        "startTime": 60,
+        "thumbnailUrl": "URL_TO_THUMBNAIL_IMAGE_INTRODUCTION",
+        "videoUrl": "https://www.youtube.com/watch?v=CziSKoOTgy4&t=29s"
       },
       {
         "title": "Part 1: Topic 2",
         "description": "Description for part 1, topic 2.",
-        "startTime": 300
+        "startTime": 300,
+        "thumbnailUrl": "URL_TO_THUMBNAIL_IMAGE_INTRODUCTION",
+        "videoUrl": "https://www.youtube.com/watch?v=CziSKoOTgy4&t=298s"
       },
       {
         "title": "Part 2: Topic 1",
         "description": "Description for part 2, topic 1.",
-        "startTime": 450
+        "startTime": 450,
+        "thumbnailUrl": "URL_TO_THUMBNAIL_IMAGE_INTRODUCTION",
+        "videoUrl": "https://www.youtube.com/watch?v=CziSKoOTgy4&t=2908s"
       },
       {
         "title": "Part 2: Topic 2",
         "description": "Description for part 2, topic 2.",
-        "startTime": 600
+        "startTime": 600,
+        "thumbnailUrl": "URL_TO_THUMBNAIL_IMAGE_INTRODUCTION",
+        "videoUrl": "https://www.youtube.com/watch?v=rqOGpiJizfQ"
       },
       {
         "title": "Part 3: Topic 1",
         "description": "Description for part 3, topic 1.",
-        "startTime": 750
+        "startTime": 750,
+        "thumbnailUrl": "URL_TO_THUMBNAIL_IMAGE_INTRODUCTION",
+        "videoUrl": "https://www.youtube.com/watch?v=CziSKoOTgy4&t=2999s"
       },
       {
         "title": "Part 3: Topic 2",
         "description": "Description for part 3, topic 2.",
-        "startTime": 900
+        "startTime": 900,
+        "thumbnailUrl": "URL_TO_THUMBNAIL_IMAGE_INTRODUCTION",
+        "videoUrl": "https://www.youtube.com/watch?v=CziSKoOTgy4&t=500s"
       }
-    ]
-  },
-  {
-    "videoTitle": "This, is water",
-    "videoUrl": "https://www.youtube.com/watch?v=eC7xzavzEKY",
-    "timeslots": [
-      {
-        "title": "Introduction",
-        "description": "What is water?",
-        "startTime": 0
-      },
-      {
-        "title": "Part 1: Topic 1",
-        "description": "Description for part 1, topic 1.",
-        "startTime": 60
-      },
-      {
-        "title": "Part 1: Topic 2",
-        "description": "Description for part 1, topic 2.",
-        "startTime": 300
-      },
-      {
-        "title": "Part 2: Topic 1",
-        "description": "Description for part 2, topic 1.",
-        "startTime": 450
-      },
-      {
-        "title": "Part 2: Topic 2",
-        "description": "Description for part 2, topic 2.",
-        "startTime": 600
-      },
-      {
-        "title": "Part 3: Topic 1",
-        "description": "Description for part 3, topic 1.",
-        "startTime": 750
-      },
-      {
-        "title": "Part 3: Topic 2",
-        "description": "Description for part 3, topic 2.",
-        "startTime": 900
-      }
+   
     ]
   }
 ]
