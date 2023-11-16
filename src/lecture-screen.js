@@ -37,11 +37,11 @@ export class LectureScreen extends LitElement {
 
   updateVideoTime() {
     if (this.activeSlide) {
-      const videoPlayer = this.shadowRoot.querySelector('video');
+      const videoPlayer = this.shadowRoot.querySelector('video-player');
 
       if (videoPlayer) {
-        videoPlayer.src = this.activeSlide.videoUrl;
-        videoPlayer.currentTime = this.activeSlide.startTime;
+        videoPlayer.source = this.activeSlide.videoUrl;
+        // videoPlayer.activeTime = this.activeSlide.startTime;
       }
     }
   }

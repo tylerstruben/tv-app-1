@@ -84,15 +84,20 @@
       document.querySelector('lecture-buttons').activeSlide = activeSlideIndex;
     }
 
+    document.querySelector('lecture-buttons').addEventListener("previous-slide", handlePreviousSlide);
+
     function handlePreviousSlide(event) {
       const activeSlideIndex = event.detail;
+      console.log(activeSlideIndex)
       document.querySelector('lecture-slide-list').activeSlide = activeSlideIndex;
       document.querySelector('lecture-screen').activeSlide = activeSlideIndex;
       document.querySelector('lecture-description').activeSlide = activeSlideIndex;
       document.querySelector('lecture-buttons').activeSlide = activeSlideIndex;
     }
 
-    function handleNextSlide(event) {
+    document.querySelector('lecture-buttons').addEventListener("next-slide", handleNextSlide);
+
+    function handleNextSlide() {
       const activeSlideIndex = event.detail;
       document.querySelector('lecture-slide-list').activeSlide = activeSlideIndex;
       document.querySelector('lecture-screen').activeSlide = activeSlideIndex;
