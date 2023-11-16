@@ -36,8 +36,10 @@ export class LectureButtons extends LitElement {
   }
 
   nextSlide() {
-    if (this.activeSlide < this.totalSlides - 1) {
+    console.log(this.activeSlide, this.totalSlides);
+    if (this.activeSlide < (this.totalSlides - 1)) {
       this.activeSlide++;
+      console.log(this.activeSlide)
       this.dispatchEvent(new CustomEvent('next-slide', { detail: this.activeSlide }));
     }
   }
