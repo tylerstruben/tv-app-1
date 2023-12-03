@@ -15,14 +15,17 @@
       font-family: sans-serif;
       background-color: white;
       color: black;
+      height: 100vh;
+    }
+.grid-container{
       display: grid;
       grid-template-columns: 1fr 2fr; 
       grid-template-rows: 1fr auto auto; 
-      grid-template-areas:
-        "video lecture-list"
-        "video buttons"
-        "video description"; 
-      height: 100vh;
+      
+    }
+
+    .grid-item{
+      padding: 5px;
     }
 
     lecture-slide-list {
@@ -63,48 +66,20 @@
 </head>
 
 <body>
-  <lecture-slide-list @lecture-slide-selected="${handleLectureSlideSelected}"></lecture-slide-list>
-  <lecture-screen></lecture-screen>
-  <lecture-buttons @previous-slide="${handlePreviousSlide}" @next-slide="${handleNextSlide}"></lecture-buttons>
-  <lecture-description></lecture-description>
 
-  <script type="module" src="./src/tv-app.js"></script>
-  <script type="module" src="./src/lecture-screen.js"></script>
-  <script type="module" src="./src/lecture-slide-list.js"></script>
-  <script type="module" src="./src/lecture-buttons.js"></script>
-  <script type="module" src="./src/lecture-description.js"></script>
+  <div class="grid-container">
+    <div class="grid-item">  
+      <lecture-screen></lecture-screen>
+      <lecture-buttons @previous-slide="${handlePreviousSlide}" @next-slide="${handleNextSlide}"></lecture-buttons>
+      <lecture-description></lecture-description>
+    </div>
+    <div class="grid-item">  
+      <lecture-slide-list @lecture-slide-selected="${handleLectureSlideSelected}"></lecture-slide-list>
+    </div>
 
-  <script>
-    function handleLectureSlideSelected(event) {
-      const activeSlideIndex = event.detail.startTime; 
-      document.querySelector('lecture-slide-list').activeSlide = activeSlideIndex;
-      document.querySelector('lecture-screen').activeSlide = activeSlideIndex;
-      document.querySelector('lecture-buttons').activeSlide = activeSlideIndex;
-      document.querySelector('lecture-description').activeSlide = activeSlideIndex;
-      document.querySelector('lecture-buttons').activeSlide = activeSlideIndex;
-    }
+  </div>
 
-    document.querySelector('lecture-buttons').addEventListener("previous-slide", handlePreviousSlide);
-
-    function handlePreviousSlide(event) {
-      const activeSlideIndex = event.detail;
-      console.log(activeSlideIndex)
-      document.querySelector('lecture-slide-list').activeSlide = activeSlideIndex;
-      document.querySelector('lecture-screen').activeSlide = activeSlideIndex;
-      document.querySelector('lecture-description').activeSlide = activeSlideIndex;
-      document.querySelector('lecture-buttons').activeSlide = activeSlideIndex;
-    }
-
-    document.querySelector('lecture-buttons').addEventListener("next-slide", handleNextSlide);
-
-    function handleNextSlide() {
-      const activeSlideIndex = event.detail;
-      document.querySelector('lecture-slide-list').activeSlide = activeSlideIndex;
-      document.querySelector('lecture-screen').activeSlide = activeSlideIndex;
-      document.querySelector('lecture-description').activeSlide = activeSlideIndex;
-      document.querySelector('lecture-buttons').activeSlide = activeSlideIndex;
-    }
-  </script>
+  <script type="module" src="./src/lecture-app.js"></script>
 </body>
 
 </html>
