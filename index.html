@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -15,71 +15,26 @@
       font-family: sans-serif;
       background-color: white;
       color: black;
-      height: 100vh;
     }
-.grid-container{
+  
+    tv-app {
       display: grid;
-      grid-template-columns: 1fr 2fr; 
-      grid-template-rows: 1fr auto auto; 
-      
-    }
-
-    .grid-item{
-      padding: 5px;
-    }
-
-    lecture-slide-list {
-      grid-area: lecture-list; 
-      overflow-y: auto;
-      max-height: 100%;
-    }
-
-    lecture-screen {
-      grid-area: video; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%; 
-    }
-
-    lecture-buttons,
-    lecture-description {
-      grid-area: buttons; 
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 10px;
-    }
-    
-    lecture-description {
-      grid-area: description; 
-      margin: 10px;
-      padding: 15px;
-      border: 1px solid black;
-      cursor: pointer;
-      font-size: 16px;
-      background-color: #ecf0f1;
-      border-radius: 5px;
+      gap: 10px;
+      margin-left: 200px;
+      width: 2000px
     }
   </style>
+  <title>tv-station</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
 </head>
 
 <body>
-
-  <div class="grid-container">
-    <div class="grid-item">  
-      <lecture-screen></lecture-screen>
-      <lecture-buttons @previous-slide="${handlePreviousSlide}" @next-slide="${handleNextSlide}"></lecture-buttons>
-      <lecture-description></lecture-description>
-    </div>
-    <div class="grid-item">  
-      <lecture-slide-list @lecture-slide-selected="${handleLectureSlideSelected}"></lecture-slide-list>
-    </div>
-
-  </div>
-
-  <script type="module" src="./src/lecture-app.js"></script>
+  <tv-app>
+  </tv-app>
+  <script type="module">
+    import "./src/tv-app.js";
+    import "./src/tv-channel.js";
+  </script>
 </body>
 
 </html>
