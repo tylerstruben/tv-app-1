@@ -43,6 +43,8 @@ export class TvChannel extends LitElement {
         max-width: 100%;
         height: auto;
         margin-bottom: 10px;
+        object-fit: cover;
+        
       }
 
       h3, h4, h5 {
