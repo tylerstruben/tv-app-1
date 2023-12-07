@@ -39,9 +39,10 @@ export class TvChannel extends LitElement {
         transition: background-color 0.3s ease;
       }
 
-      :host(:hover) {
-      background-color: #007bff; 
-    }
+      
+      :host([active]) {
+        background-color: #007bff;
+      }
 
       .thumbnail {
         max-width: 100%;

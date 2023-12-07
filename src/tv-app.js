@@ -116,8 +116,8 @@ export class TvApp extends LitElement {
       
         </div>
       <div class="controls">
-        <button class="prev-button">Previous</button>
-        <button class="next-button">Next</button>
+      <button class="prev-button" @click="${this.prevSlide}">Previous</button>
+      <button class="next-button" @click="${this.nextSlide}">Next</button>
       </div>
         </div>  
         <div class="channel-list">
@@ -149,6 +149,9 @@ export class TvApp extends LitElement {
     // Handle channel item click
     console.log(e.target);
     this.activeIndex= e.target.index;
+    this.shadowRoot.querySelector('video-player').shadowRoot.querySelector("a11y-media-player").media.currentTime;
+    this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').play();
+    this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').seek(e.target.timecode);
   }
 
   updated(changedProperties) {
@@ -167,7 +170,27 @@ export class TvApp extends LitElement {
     });
   }
 
- 
+  prevSlide() {
+    this.activeIndex = Math.max(0, this.activeIndex - 1);
+    
+  }
+
+  nextSlide() {
+    this.activeIndex = Math.min(this.channelList.length - 1, this.activeIndex + 1);  
+  }
+
+
+  connectedCallback() {
+    super.connectedCallback();
+    
+    setInterval(() => {
+      const currentTime = this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').media.currentTime;
+      if (this.activeIndex + 1 < this.channelList.length &&
+          currentTime >= this.channelList[this.activeIndex + 1].metadata.timecode) {
+        this.activeIndex++;
+      }
+    }, 1000);
+  }
 
   async updateChannelList(source) {
     await fetch(source).then((resp) => resp.ok ? resp.json() : []).then((responseData) => {
