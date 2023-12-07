@@ -14,7 +14,7 @@
         "order": 0,
         "parent": null,
         "title": "BMW E30 M3",
-        "description": "",
+        "description": "The BMW E30 M3, produced from 1986 to 1991, is an iconic sports car known for its racing success and enthusiast appeal. Powered by a high-revving 2.3-liter four-cylinder engine, it produced around 200 horsepower. With its distinctive boxy design, aggressive handling, and motorsport pedigree, the E30 M3 has become a highly sought-after classic among car enthusiasts.",
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 23,
@@ -29,7 +29,7 @@
         "order": 0,
         "parent": null,
         "title": "BMW E34 M5",
-        "description": "",
+        "description": "The BMW E34 M5, manufactured from 1989 to 1995, is a high-performance sedan that marked the second generation of the M5 series. It featured a powerful 3.6-liter inline-six engine initially and later a 3.8-liter version, delivering impressive performance for its time. Renowned for its refined yet sporty design, the E34 M5 is celebrated for its blend of luxury and performance, making it a classic in the M car lineup.",
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 127,
@@ -39,12 +39,12 @@
         }
       },
       {
-        "id": "2",
+        "id": "3",
         "indent": 0,
         "order": 0,
         "parent": null,
         "title": "BMW M1",
-        "description": "",
+        "description": "The BMW M1, produced from 1978 to 1981, is a mid-engine sports car that stands out as BMW's first and only mid-engined production car. Designed for racing homologation, it featured a 3.5-liter inline-six engine developed by BMW M. The M1's unique design, limited production (only 456 units), and motorsport influence contribute to its status as a highly coveted collector's car.",
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 206,
@@ -59,7 +59,7 @@
         "order": 0,
         "parent": null,
         "title": "BMW E39 M5",
-        "description": "",
+        "description": "The BMW E39 M5, produced from 1998 to 2003, is a high-performance sedan celebrated for its powerful V8 engine and exceptional driving dynamics. It is equipped with a 4.9-liter V8 engine that produces around 400 horsepower, and it was one of the first M5 models to feature a V8 powerplant. The E39 M5 is often praised for its balanced combination of luxury and performance, making it a standout in the M5 lineup and a sought-after classic.",
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 265,
@@ -74,7 +74,7 @@
         "order": 0,
         "parent": null,
         "title": "BMW Z3M Coupe",
-        "description": "",
+        "description": "The BMW Z3 M Coupe, produced from 1998 to 2002, is a distinctive sports car known for its quirky shooting-brake design. It shares the mechanical components of the M Roadster and is powered by a high-performance inline-six engine, delivering around 240 horsepower. The Z3 M Coupe has gained a cult following for its unique appearance, potent performance, and engaging driving experience.",
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 338,
@@ -90,7 +90,7 @@
         "order": 0,
         "parent": null,
         "title": "BMW E60 M5 (V10)",
-        "description": "",
+        "description": "The BMW E60 M5, produced from 2005 to 2010, is revered for its high-performance attributes, notably featuring a 5.0-liter V10 engine—the only M5 to do so. This engine produces around 500 horsepower and is paired with a seven-speed SMG automated manual transmission. The E60 M5 is distinctive for its aggressive styling, technological innovations, and impressive acceleration, marking it as a standout in the M5 lineage.",
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 405,
@@ -105,7 +105,7 @@
         "order": 0,
         "parent": null,
         "title": "BMW 1M Coupe",
-        "description": "",
+        "description": "The BMW 1 Series M Coupe, produced in 2011, is a compact and potent sports car celebrated for its nimble handling and powerful performance. It is equipped with a 3.0-liter twin-turbocharged inline-six engine, producing around 335 horsepower and 370 lb-ft of torque. With a limited production run and a focus on driver engagement, the 1M Coupe has become a sought-after enthusiast's choice in the BMW lineup.",
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 498,
@@ -120,11 +120,11 @@
         "order": 0,
         "parent": null,
         "title": "BMW M8 Competition",
-        "description": "",
+        "description": "The BMW M8 Competition is a high-performance grand tourer known for its powerful engine and luxurious features. Introduced in 2019, it is powered by a 4.4-liter twin-turbocharged V8 engine, delivering around 617 horsepower and 553 lb-ft of torque. With advanced technology, a sleek design, and M-specific performance enhancements, the M8 Competition stands as one of BMW's flagship models, offering a perfect blend of speed and luxury.",
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 568,
-          "thumbnail":"https://www.topgear.com/sites/default/files/images/news-article/2021/03/d4cc197faa9a74e2a9a90c21f9130707/bmw_m8_prototype_front.jpg",
+          "thumbnail":"https://www.topgear.com/sites/default/files/cars-car/image/2019/10/bmw_m8_coupe_fire_red_033.jpg",
           "created": 1697033522,
           "updated": 1697034021
         }
@@ -135,7 +135,7 @@
         "order": 0,
         "parent": null,
         "title": "BMW M635 CSI",
-        "description": "",
+        "description": "The BMW M635 CSI, produced from 1983 to 1989, is a classic high-performance coupe, also known as the M6 in some markets. It is powered by a 3.5-liter inline-six engine, producing around 286 horsepower. Renowned for its shark-nose design, motorsport heritage, and advanced features for its time, the M635 CSI is considered a collector's item, embodying the spirit of BMW's M division during the 1980s.",
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 640,
@@ -150,7 +150,7 @@
         "order": 0,
         "parent": null,
         "title": "BMW E46 M3 CSL",
-        "description": "",
+        "description": "The BMW E46 M3 CSL, manufactured in 2003 and 2004, is a lightweight and track-focused variant of the E46 M3. It is powered by a 3.2-liter inline-six engine producing 360 horsepower. Notable for its extensive use of carbon fiber, distinctive design elements, and focused suspension tuning, the E46 M3 CSL is highly regarded among enthusiasts as one of the most exhilarating and special M3 models ever produced.",
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 712,

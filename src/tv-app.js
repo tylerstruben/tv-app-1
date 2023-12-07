@@ -14,7 +14,8 @@ export class TvApp extends LitElement {
       appName: { type: String },
       source: { type: String },
       channelList: { type: Array },
-      activeChannel: { type: Number, Reflect: true},
+      activeIndex: { type: Number}
+      
     };
   }
 
@@ -23,6 +24,8 @@ export class TvApp extends LitElement {
     this.appName = '';
     this.source = new URL('../assets/channels.json', import.meta.url).href;
     this.channelList = [];
+    this.activeIndex = 0;
+
   }
 
   static get styles() {
@@ -45,6 +48,15 @@ export class TvApp extends LitElement {
         .video-section {
           grid-column: 1;
         }
+
+        .description-box {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          margin-top: 20px;
+        }
+
 
         .channel-list {
           grid-column: 2;
@@ -98,6 +110,11 @@ export class TvApp extends LitElement {
           
       <video-player source="https://www.youtube.com/watch?v=Pu0JawDgkSw" accent-color="blue" dark track="https://haxtheweb.org/files/HAXshort.vtt"></video-player> 
       <h2>Top 10 best BMW M cars. EVER!</h2>
+      <div class="description-box">
+  
+                ${this.channelList.length > 0 ? this.channelList[this.activeIndex].description : ''}
+      
+        </div>
       <div class="controls">
         <button class="prev-button">Previous</button>
         <button class="next-button">Next</button>
@@ -108,12 +125,15 @@ export class TvApp extends LitElement {
           ${this.channelList.map(
             (item, index) => html`
               <tv-channel 
+                ?active="${index === this.activeIndex}"
+                index="${index}"
                 title="${item.title}"
                 presenter="${item.metadata.author}"
                 @click="${this.itemClick}"
                 timecode="${item.metadata.timecode}"
                 thumbnail="${item.metadata.thumbnail}"
-                id="${item.id}"
+
+         
               ></tv-channel> 
               
             `
@@ -128,11 +148,7 @@ export class TvApp extends LitElement {
   itemClick(e) {
     // Handle channel item click
     console.log(e.target);
-    this.shadowRoot.querySelector('video-player').shadowRoot.querySelector("a11y-media-player").media.currentTime;
-    this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').play();
-    this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').seek(e.target.timecode);
-    this.activeChannel=e.target.id;
-
+    this.activeIndex= e.target.index;
   }
 
   updated(changedProperties) {
@@ -142,11 +158,16 @@ export class TvApp extends LitElement {
         this.updateChannelList(this[propName]);
       }
 
-      if (propName === "activeChannel" && this[propName]) {
-        this.shadowRoot.getElementById(this.activeChannel);
+      if(propName === "activeIndex"){
+        this.shadowRoot.querySelector('video-player').shadowRoot.querySelector("a11y-media-player").media.currentTime;
+        this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').play();
+        this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').seek(e.target.timecode);
       }
+      
     });
   }
+
+ 
 
   async updateChannelList(source) {
     await fetch(source).then((resp) => resp.ok ? resp.json() : []).then((responseData) => {

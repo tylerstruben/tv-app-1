@@ -13,6 +13,9 @@ export class TvChannel extends LitElement {
       timecode: { type: Number },
       description: { type: String },
       thumbnail: { type: String },
+      description: { type: String },
+      active: {type: Boolean, reflect: true},
+      index: {type: Number}
     };
   }
 
@@ -22,6 +25,7 @@ export class TvChannel extends LitElement {
     this.video = '';
     this.presenter = '';
     this.thumbnail = '';
+    this.description = '';
   }
 
   static get styles() {
