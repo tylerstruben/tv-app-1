@@ -149,7 +149,7 @@ export class TvApp extends LitElement {
     // Handle channel item click
     console.log(e.target);
     this.activeIndex= e.target.index;
-    this.shadowRoot.querySelector('video-player').shadowRoot.querySelector("a11y-media-player").media.currentTime;
+    this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').media.currentTime;
     this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').play();
     this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').seek(e.target.timecode);
   }
@@ -162,9 +162,9 @@ export class TvApp extends LitElement {
       }
 
       if(propName === "activeIndex"){
-        this.shadowRoot.querySelector('video-player').shadowRoot.querySelector("a11y-media-player").media.currentTime;
-        this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').play();
-        this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').seek(e.target.timecode);
+        var activeChannel = document.querySelector("tv-channel[index = '" + this.activeIndex + "' ] ");
+       console.log(activeChannel);
+       this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').seek(activeChannel);
       }
       
     });
@@ -177,6 +177,7 @@ export class TvApp extends LitElement {
 
   nextSlide() {
     this.activeIndex = Math.min(this.channelList.length - 1, this.activeIndex + 1);  
+
   }
 
 
