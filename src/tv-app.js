@@ -149,9 +149,9 @@ export class TvApp extends LitElement {
     // Handle channel item click
     console.log(e.target);
     this.activeIndex= e.target.index;
-    this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').media.currentTime;
+    
     this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').play();
-    this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').seek(e.target.timecode);
+   
   }
 
   updated(changedProperties) {
@@ -162,9 +162,13 @@ export class TvApp extends LitElement {
       }
 
       if(propName === "activeIndex"){
-        var activeChannel = document.querySelector("tv-channel[index = '" + this.activeIndex + "' ] ");
-       console.log(activeChannel);
-       this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').seek(activeChannel);
+        console.log(this.shadowRoot.querySelectorAll("tv-channel"));
+        console.log(this.activeIndex)
+
+        var activeChannel = this.shadowRoot.querySelector("tv-channel[index = '" + this.activeIndex + "' ] ");
+       
+        console.log(activeChannel);
+        this.shadowRoot.querySelector('video-player').shadowRoot.querySelector('a11y-media-player').seek(activeChannel.timecode);
       }
       
     });
