@@ -18,6 +18,7 @@
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 23,
+          "minuteTranslation": "0:23",
           "thumbnail":"https://en.wheelz.me/wp-content/uploads/2022/01/BMW-M3-1987.jpg",
           "created": 1697033522,
           "updated": 1697034021
@@ -33,6 +34,7 @@
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 127,
+          "minuteTranslation": "2:07",
           "thumbnail":"https://bimmertips.com/wp-content/uploads/2017/01/BMW_E34_M5_02.jpg",
           "created": 1697033522,
           "updated": 1697034021
@@ -48,6 +50,7 @@
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 206,
+          "minuteTranslation": "3:26",
           "thumbnail":"https://cdn.bmwblog.com/wp-content/uploads/2022/05/bmw-m1-red-02-1.jpg",
           "created": 1697033522,
           "updated": 1697034021
@@ -63,6 +66,7 @@
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 265,
+          "minuteTranslation": "4:25",
           "thumbnail":"https://i.ytimg.com/vi/1brx-2FLwb4/maxresdefault.jpg",
           "created": 1697033522,
           "updated": 1697034021
@@ -78,6 +82,7 @@
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 338,
+          "minuteTranslation": "5:38",
           "thumbnail":"https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/topics/magazine-article-pool/2021/z3-m-coupe/bmw-z3-m-coupe-ai-01.jpg.asset.1635778304609.jpg",
           "created": 1697033522,
           "updated": 1697034021
@@ -94,6 +99,7 @@
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 405,
+          "minuteTranslation": "6:45",
           "thumbnail":"https://www.supersprint.com/public/img/001-505797.jpg",
           "created": 1697033522,
           "updated": 1697034021
@@ -109,6 +115,7 @@
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 498,
+          "minuteTranslation": "8:18",
           "thumbnail":"https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/topics/magazine-article-pool/2018/bmw-1er-m-coupe/bmw-1er-m-coupe-standard-detail-01.jpg",
           "created": 1697033522,
           "updated": 1697034021
@@ -124,6 +131,7 @@
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 568,
+          "minuteTranslation": "9:28",
           "thumbnail":"https://www.topgear.com/sites/default/files/cars-car/image/2019/10/bmw_m8_coupe_fire_red_033.jpg",
           "created": 1697033522,
           "updated": 1697034021
@@ -139,6 +147,7 @@
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 640,
+          "minuteTranslation": "10:40",
           "thumbnail":"https://cdn.bmwblog.com/wp-content/uploads/2015/03/M635CSi-bmw.jpg",
           "created": 1697033522,
           "updated": 1697034021
@@ -154,6 +163,7 @@
         "metadata": {
           "source": "https://www.youtube.com/watch?v=Pu0JawDgkSw",
           "timecode": 712,
+          "minuteTranslation": "11:52",
           "thumbnail":"https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/topics/magazine-article-pool/2019/bmw-m3-csl/bmw-m3-csl-si.jpg",
           "created": 1697033522,
           "updated": 1697034021

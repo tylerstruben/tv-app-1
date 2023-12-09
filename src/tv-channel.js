@@ -15,7 +15,8 @@ export class TvChannel extends LitElement {
       thumbnail: { type: String },
       description: { type: String },
       active: {type: Boolean, reflect: true},
-      index: {type: Number}
+      index: {type: Number},
+      minuteTranslation: {type: String}
     };
   }
 
@@ -26,6 +27,7 @@ export class TvChannel extends LitElement {
     this.presenter = '';
     this.thumbnail = '';
     this.description = '';
+    this.minuteTranslation = '';
   }
 
   static get styles() {
@@ -77,7 +79,7 @@ export class TvChannel extends LitElement {
   render() {
     return html`
       <img class="thumbnail" src="${this.thumbnail}" alt="${this.title}">
-      <h3>${this.title}</h3>
+      <h3>${this.title}; ${this.minuteTranslation}</h3>
       <h4>${this.presenter}</h4>
       <h5>${this.description}</h5>
       <slot></slot>

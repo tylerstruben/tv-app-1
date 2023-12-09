@@ -132,7 +132,7 @@ export class TvApp extends LitElement {
                 @click="${this.itemClick}"
                 timecode="${item.metadata.timecode}"
                 thumbnail="${item.metadata.thumbnail}"
-
+                minuteTranslation="${item.metadata.minuteTranslation}" 
          
               ></tv-channel> 
               
