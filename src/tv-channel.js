@@ -12,7 +12,12 @@ export class TvChannel extends LitElement {
       presenter: { type: String },
       timecode: { type: Number },
       description: { type: String },
-      thumbnail: { type: String },
+      thumbnail: { type: String }, 
+      description: { type: String },
+      active: {type: Boolean, reflect: true},
+      index: {type: Number},
+      minuteTranslation: {type: String} 
+
     };
   }
 
@@ -21,7 +26,9 @@ export class TvChannel extends LitElement {
     this.title = '';
     this.video = '';
     this.presenter = '';
-    this.thumbnail = '';
+    this.thumbnail = ''; 
+    this.description = ''; 
+    this.minuteTranslation = '';
   }
 
   static get styles() {
@@ -35,9 +42,9 @@ export class TvChannel extends LitElement {
         transition: background-color 0.3s ease;
       }
 
-      :host(:hover) {
-      background-color: #007bff; 
-    }
+      :host([active]) { 
+        background-color: #007bff
+      }
 
       .thumbnail {
         max-width: 100%;
@@ -71,8 +78,9 @@ export class TvChannel extends LitElement {
 
   render() {
     return html`
-      <img class="thumbnail" src="${this.thumbnail}" alt="${this.title}">
-      <h3>${this.title}</h3>
+      <img class="thumbnail" src="${this.thumbnail}" alt="${this.title}"> 
+    
+      <h3>${this.title}  ${this.minuteTranslation}</h3>
       <h4>${this.presenter}</h4>
       <h5>${this.description}</h5>
       <slot></slot>
