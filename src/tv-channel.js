@@ -88,4 +88,4 @@ export class TvChannel extends LitElement {
   }
 }
 
-customElements.define(TvChannel.tag, TvChannel);
+customElements.define(TvChannel.tag, TvChannel); 
